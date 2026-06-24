@@ -216,3 +216,58 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ---------------------------------------------------------------------------
+# Project-specific (synapse-router)
+# ---------------------------------------------------------------------------
+
+# OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE / editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Env / secrets
+.env.local
+.env.*.local
+*.pem
+*.key
+*.crt
+
+# Model artifacts (downloaded by scripts, not committed)
+classifier-artifacts/*.onnx
+classifier-artifacts/*.bin
+classifier-artifacts/*.pt
+classifier-artifacts/*.safetensors
+
+# Benchmark outputs
+bench/results/
+docs/benchmarks/raw/
+
+# Terraform
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+.terraform/
+.terraform.lock.hcl
+crash.log
+crash.*.log
+
+# Kubernetes
+kubeconfig
+*.kubeconfig
+
+# Docker
+.dockerignore.local
+
+# Claude Code
+.claude/
+CLAUDE.local.md
